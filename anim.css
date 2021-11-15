@@ -1,0 +1,186 @@
+body {
+  }
+.square {
+    margin: 50px 50px 50px 50px;
+    width: 120px;
+    height: 120px;
+    background: #1E90FF;
+    border-radius: 10px;
+    animation-name: square;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes square{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+     transform: rotate(360deg);
+  }
+  }
+  .square2 {
+      margin: 50px 50px 50px 50px;
+      width: 120px;
+      height: 120px;
+      background: #6495ED;
+      border-radius: 10px;
+      animation-name: square2;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+  @keyframes square2{
+    0%{
+      transform: translate(0,0)
+    }
+    100%{
+      transform: translate(500px,0)
+    }
+    }
+.square3 {
+      margin: 50px 50px 50px 50px;
+      width: 120px;
+      height: 120px;
+      background: #7B68EE;
+      border-radius: 10px;
+      animation-name: square3;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease;
+    }
+    @keyframes square3{
+      0%{
+        transform: translate(0,0)
+      }
+      100%{
+        transform: translate(0,200px)
+      }
+      }
+.square4 {
+  margin: 50px 50px 50px 50px;
+  width: 120px;
+  height: 120px;
+  background: #4169E1;
+  border-radius: 10px;
+  animation-name: square4;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+@keyframes square4 {
+  0%{
+    transform: translate(0,0)
+  }
+  100%{
+    transform: translate(500px,0)
+  }
+}
+.square5 {
+  margin: 50px 50px 50px 50px;
+  width: 120px;
+  height: 120px;
+  background: #0000FF;
+  border-radius: 10px;
+  animation-name: square5;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+@keyframes square5 {
+  0%{
+    transform: scale(0,0)
+  }
+  100%{
+    animation-timing-function: ease-in;
+    transform: scale(100px,50px)
+  }
+}
+.square6 {
+  margin: 50px 50px 50px 50px;
+  width: 120px;
+  height: 120px;
+  background: #0000CD;
+  border-radius: 10px;
+  animation-name: square6;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+@keyframes square6 {
+  0%{
+    transform: translate(350px, -150px) rotate(360deg)
+  }
+  100%{
+  }
+}
+.square7 {
+  margin: 50px 50px 50px 50px;
+  width: 120px;
+  height: 120px;
+  background: #9370DB;
+  border-radius: 10px;
+  animation-name: square7;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+@keyframes square7 {
+  0%{
+    transform: translate(500px,0);
+    z-index: 1;
+  }
+  100%{
+    transform: translate(0,0);
+    z-index: -1;
+    background-color: #FFDEAD;
+  }
+}
+.square8 {
+  margin: 50px 50px 50px 50px;
+  width: 120px;
+  height: 120px;
+  background: #00CED1;
+  border-radius: 10px;
+}
+.square9 {
+  margin: 50px 50px 50px 50px;
+  width: 120px;
+  height: 120px;
+  background: #7FFFD4;
+  border-radius: 10px;
+  opacity:0;
+  transition: 1s;
+}
+.square8:hover+.square9 {
+  opacity:1;
+  transition: 1s;
+}
+.square10{
+  margin: 50px 50px 50px 50px;
+  width: 120px;
+  height: 120px;
+  background: #ADFF2F;
+  border-radius: 10px;
+  animation-name: square10;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+@keyframes square10 {
+  0%{
+    transform: translate(0,0);
+    opacity: 0;
+  }
+  50%{
+    transform: translate(500px,0);
+  }
+  100%{
+    transform: scale(50px,0);
+    opacity: 100;
+  }
+}
